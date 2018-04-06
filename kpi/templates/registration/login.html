@@ -4,7 +4,7 @@
 {% block content %}
 <div class="registration__bg">
   <form method="post" action="." class="registration registration--login">
-    <div class="registration--logo"><a href="/"><img src="{% static 'img/kobologo.svg' %}"/></a></div>
+    <div class="registration--logo"><a href="/"><img src="{% static 'img/cocoon.png' %}"/></a></div>
     {% csrf_token %}
     {{ form.as_p }}
     <a href="{% url 'auth_password_reset' %}" class="registration__forgot">Forgot?</a>
@@ -13,7 +13,7 @@
     <input type="hidden" name="next" value="{{ next }}" />
 
     <div class="registration__footer">
-      or <a href="{% url 'registration_register' %}">create an account</a>
+      or <a href="{% url 'registration_register' %}">create an a asd asd asd asd asdasdccount</a>
     </div>
   </form>
 
@@ -33,4 +33,3 @@
   });
 </script>
 {% endblock footer %}
-
