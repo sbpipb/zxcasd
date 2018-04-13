@@ -151,7 +151,7 @@ export class AccountSettings extends React.Component {
     };
 
     return (
-      <DocumentTitle title={`${accountName} | KoboToolbox`}>
+      <DocumentTitle title={`CocoonBox`}>
       <ui.Panel>
         <bem.AccountSettings>
           <bem.AccountSettings__item m={'column'}>
@@ -174,7 +174,7 @@ export class AccountSettings extends React.Component {
                 </label>
               </bem.AccountSettings__item>
               <bem.AccountSettings__item>
-                <input type="checkbox" 
+                <input type="checkbox"
                   id="requireAuth"
                   checked={this.state.requireAuth}
                   onChange={this.requireAuthChange} />

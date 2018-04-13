@@ -93,9 +93,9 @@ class App extends React.Component {
   render() {
     var assetid = this.props.params.assetid || null;
     return (
-      <DocumentTitle title="KoBoToolbox">
+      <DocumentTitle title="CocoonBox">
         <div className="mdl-wrapper">
-          { !this.isFormBuilder() && !this.state.pageState.headerHidden && 
+          { !this.isFormBuilder() && !this.state.pageState.headerHidden &&
             <div className="k-header__bar"></div>
           }
           <bem.PageWrapper m={{
@@ -108,7 +108,7 @@ class App extends React.Component {
                 <Modal params={this.state.pageState.modal} />
               }
 
-              { !this.isFormBuilder() && !this.state.pageState.headerHidden && 
+              { !this.isFormBuilder() && !this.state.pageState.headerHidden &&
                 <MainHeader assetid={assetid}/>
               }
               { !this.isFormBuilder() && !this.state.pageState.drawerHidden &&
@@ -265,7 +265,7 @@ export var routes = (
     <Route path="forms" >
       <IndexRoute component={FormsSearchableList} />
 
-      <Route path="/forms/:assetid"> 
+      <Route path="/forms/:assetid">
         {/*<Route name="form-download" path="download" component={FormDownload} />*/}
         <Route path="json" component={FormJson} />
         <Route path="xform" component={FormXform} />

@@ -118,7 +118,7 @@ export class ProjectSettings extends React.Component {
 
     return (
       <bem.FormModal__form onSubmit={this.onSubmit}>
-        {this.props.context == 'existingForm' && 
+        {this.props.context == 'existingForm' &&
           <bem.FormModal__item m={['actions', 'fixed']}>
             <button onClick={this.onSubmit} className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
               {this.props.submitButtonValue}
@@ -141,9 +141,9 @@ export class ProjectSettings extends React.Component {
             <label htmlFor="description">
               {t('Description')}
             </label>
-            <TextareaAutosize 
-              onChange={this.descriptionChange} 
-              value={this.state.description} 
+            <TextareaAutosize
+              onChange={this.descriptionChange}
+              value={this.state.description}
               placeholder={t('Enter short description here')} />
           </bem.FormModal__item>
           <bem.FormModal__item>
@@ -182,7 +182,7 @@ export class ProjectSettings extends React.Component {
                 onChange={this.shareMetadataChange}
               />
             <label htmlFor="share-metadata">
-              {t('Help KoboToolbox improve this product by sharing the sector and country where this project will be deployed.')}
+              {t('Help CocoonBox improve this product by sharing the sector and country where this project will be deployed.')}
               &nbsp;
               {t('All the information is submitted anonymously, and will not include the project name or description listed above.')}
             </label>
@@ -292,7 +292,7 @@ export class ProjectDownloads extends React.Component {
       formSubmitDisabled: true
     });
 
-    setTimeout(function() { 
+    setTimeout(function() {
       if(!this._calledComponentWillUnmount)
         this.setState({'formSubmitDisabled': false});
     }.bind(this), 5000);
@@ -426,7 +426,7 @@ export class ProjectDownloads extends React.Component {
     let dvcount = this.props.asset.deployed_versions.count;
     var docTitle = this.props.asset.name || t('Untitled');
     return (
-      <DocumentTitle title={`${docTitle} | KoboToolbox`}>
+      <DocumentTitle title={`${docTitle} | CocoonBox`}>
         <bem.FormView m='form-data-downloads'>
           <bem.FormView__row>
               <bem.FormView__cell m='label'>
@@ -507,8 +507,8 @@ export class ProjectDownloads extends React.Component {
                     </bem.FormModal__item>
                   :
                     <bem.FormModal__item key={'s'} m='export-submit'>
-                      <input type="submit" 
-                             value={t('Export')} 
+                      <input type="submit"
+                             value={t('Export')}
                              className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
                              disabled={this.state.formSubmitDisabled}/>
                     </bem.FormModal__item>
@@ -556,7 +556,7 @@ export class ProjectDownloads extends React.Component {
                         </bem.FormView__label>
                         <bem.FormView__label m='action'>
                           {item.status == 'complete' &&
-                            <a className="form-view__link form-view__link--export-download" 
+                            <a className="form-view__link form-view__link--export-download"
                                href={item.result} data-tip={t('Download')}>
                               <i className="k-icon-download" />
                             </a>
