@@ -53,16 +53,14 @@
   border-bottom: 2px solid #CBD0D7;
 
   &.registration__action {
-    font-size: 14px;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    background: #39BF6E;
-    border-bottom: 2px solid darken(#39BF6E, 20%);
+    border: none;
+    background: #0c8171;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius: 40px
 
     &:hover {
-      background: lighten(#39BF6E, 10%);
+      background: #12685c;
     }
 
     &.passwordreset__action {
@@ -70,6 +68,19 @@
       float: right;
     }
   }
+}
+
+.registration--login input {
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255,255,255,.2);
+}
+
+.registration--login {
+  background: none;
+  font-weight: lighter;
+  text-align: center
 }
 
 .registration select {
