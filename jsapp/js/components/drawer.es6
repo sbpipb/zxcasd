@@ -171,25 +171,6 @@ class Drawer extends Reflux.Component {
             : <FormSidebar />
           }
         </div>
-
-        <div className='k-drawer__icons-bottom'>
-          { stores.session.currentAccount &&
-            <a href={stores.session.currentAccount.projects_url} 
-               className='k-drawer__link' 
-               target="_blank"
-               data-tip={t('Projects (legacy)')}>
-              <i className="k-icon k-icon-globe" />
-            </a>
-          }
-          <a href='https://github.com/kobotoolbox/' className='k-drawer__link' target="_blank" data-tip={t('source')}>
-            <i className="k-icon k-icon-github" />
-          </a>
-          { stores.session.currentAccount &&
-            <a href={supportUrl()} className='k-drawer__link' target="_blank" data-tip={t('help')}>
-              <i className="k-icon k-icon-help" />
-            </a>
-          }
-        </div>
       </bem.Drawer>
       );
   }

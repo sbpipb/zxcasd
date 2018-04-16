@@ -440,7 +440,7 @@ $headerAccountTextColor: #dbedf7;
 
 @media screen and (min-width: 768px) {
   .git-rev {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 0px;
     left: 80px;
