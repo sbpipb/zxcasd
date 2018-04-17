@@ -35,10 +35,11 @@ $headerAccountTextColor: #dbedf7;
   }
 
   .header__logo {
-    width: 175px;
-    height: 40px;
-    background: url("../img/cocoon.svg") no-repeat left bottom;
-    background-size: contain;
+    width: 165px;
+    height: 55px;
+    // background: url("../img/cocoon.svg") no-repeat left bottom;
+    background: url("../img/cocoon.svg") no-repeat 0;
+    background-size: cover;
     display: block;
   }
 
